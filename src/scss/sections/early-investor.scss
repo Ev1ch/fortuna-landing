@@ -1,0 +1,14 @@
+.early-investor {
+    text-align: center;
+    background-image: url('/assets/images/sections/early-investor.png');
+    background-size: cover;
+
+    &__description {
+        display: inline-block;
+        width: 500px;
+    }
+
+    &__title {
+        color: var(--light-color);
+    }
+}
