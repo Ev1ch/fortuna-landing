@@ -1,0 +1,51 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        border-radius: 50%;
+        background-color: var(--light-color);
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+    }
+
+    &__list {
+        display: flex;
+        list-style-type: none;
+        gap: 30px;
+    }
+
+    &__link {
+        text-decoration: none;
+        text-transform: uppercase;
+        font: var(--navigation-font);
+        color: var(--light-color);
+        opacity: 0.5;
+        transition: var(--base-time);
+
+        &:hover {
+            opacity: 0.75;
+        }
+
+        &--active {
+            opacity: 1;
+        }
+    }
+
+    &__button {
+        padding: 6px 15px;
+        color: var(--light-color);
+        font: var(--navigation-font);
+        border-radius: 15px;
+        border: 2px solid var(--light-color);
+        text-decoration: none;
+        display: inline-block;
+        transition: var(--base-time);
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
