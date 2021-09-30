@@ -1,0 +1,36 @@
+@import '../components/trading-features';
+
+.trading {
+    &-reliability {
+        background-color: var(--cold-color);
+    }
+
+    &__container {
+        padding-left: 40px;
+        padding-right: 40px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__demo {
+        text-align: center;
+    }
+
+    &__text {
+        margin-bottom: 44px;
+
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+            font: var(--base-font);
+
+            &:not(:last-of-type) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__image {
+        height: 394px;
+    }
+}

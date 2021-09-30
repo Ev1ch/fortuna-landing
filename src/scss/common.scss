@@ -2,11 +2,16 @@
     box-sizing: border-box;
 }
 
-.section-title {
-    font: var(--title-font);
-    color: var(--theme-color);
-    margin-top: 0;
-    margin-bottom: 40px;
+.section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    &-title {
+        font: var(--title-font);
+        color: var(--theme-color);
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
 }
 
 .button {

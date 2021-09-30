@@ -1,0 +1,23 @@
+.trading-features {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 52px;
+    list-style-type: none;
+
+    &__item {
+        position: relative;
+        font: var(--base-font);
+
+        &:not(:last-of-type) {
+            margin-bottom: 23px;
+        }
+
+        &::before {
+            top: 50%;
+            transform: translateY(-50%);
+            left: -52px;
+            position: absolute;
+            content: url('/assets/icons/tick.svg');
+        }
+    }
+}
