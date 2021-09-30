@@ -1,0 +1,26 @@
+.platform-feature {
+    border-radius: 6px;
+    text-align: center;
+    background-color: var(--cold-color);
+    padding: 20px;
+
+    &__title {
+        margin-top: 10px;
+        margin-bottom: 4px;
+        color: var(--accent-color);
+        font: 500 18px var(--base-font-family);
+    }
+
+    &__description {
+        margin-top: 0;
+        margin-bottom: 0;
+        font: 400 15px var(--base-font-family);
+    }
+}
+
+.platform-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}

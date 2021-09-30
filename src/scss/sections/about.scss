@@ -1,0 +1,22 @@
+@import '../components/platform-features';
+
+.about {
+    text-align: center;
+
+    &__container {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    &__description {
+        display: inline-block;
+        width: 500px;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        p {
+            font: var(--base-font);
+        }
+    }
+}
