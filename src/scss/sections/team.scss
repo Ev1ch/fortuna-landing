@@ -1,0 +1,13 @@
+@import '../components/team-members';
+
+.team {
+    &__section {
+        text-align: center;
+        padding-left: 80px;
+        padding-right: 80px;
+
+        &:not(:last-of-type) {
+            margin-bottom: 40px;
+        }
+    }
+}
