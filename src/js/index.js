@@ -1,11 +1,5 @@
 import Swiper, { Navigation } from 'swiper';
-
 Swiper.use([Navigation]);
-
-const Breakpoints = {
-    MD: 768,
-    LG: 1440,
-};
 
 const TeamSelectors = {
     CONTAINER: '#team-swiper',
