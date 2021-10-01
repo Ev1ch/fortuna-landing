@@ -27,6 +27,11 @@
     &__cv {
         color: var(--accent-color);
         margin-bottom: 0;
+
+        .icon {
+            filter: invert(51%) sepia(40%) saturate(765%) hue-rotate(173deg)
+                brightness(84%) contrast(93%);
+        }
     }
 }
 
