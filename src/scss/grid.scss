@@ -1,5 +1,25 @@
+@import 'variables';
+
 .container {
-    width: 1080px;
+    width: var(--container-width);
     margin-left: auto;
     margin-right: auto;
+}
+
+@media screen and (max-width: $breakpoint-sm) {
+    .container {
+        --container-width: 320px;
+    }
+}
+
+@media screen and (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+    .container {
+        --container-width: 760px;
+    }
+}
+
+@media screen and (min-width: $breakpoint-lg) {
+    .container {
+        --container-width: 1080px;
+    }
 }
