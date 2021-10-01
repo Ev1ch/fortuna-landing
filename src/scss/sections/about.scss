@@ -1,4 +1,4 @@
-@import '../components/platform-features';
+@import '../components/platform-feature';
 
 .about {
     text-align: center;
@@ -18,5 +18,12 @@
         p {
             font: var(--base-font);
         }
+    }
+
+    .platform-features {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-columns: 1fr;
+        gap: 20px;
     }
 }

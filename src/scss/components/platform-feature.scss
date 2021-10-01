@@ -17,10 +17,3 @@
         font: 400 15px var(--base-font-family);
     }
 }
-
-.platform-features {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}

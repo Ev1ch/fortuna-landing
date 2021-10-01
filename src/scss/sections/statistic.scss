@@ -1,6 +1,6 @@
 @import '../components/technology-table';
-@import '../components/technology-sales';
-@import '../components/sales-charts';
+@import '../components/technology-sale';
+@import '../components/sales-chart';
 
 .statistic {
     padding-bottom: 60px;
@@ -23,5 +23,17 @@
                 margin-bottom: 20px;
             }
         }
+    }
+
+    .sales-charts {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .technology-sales {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 30px;
     }
 }

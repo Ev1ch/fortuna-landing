@@ -34,25 +34,3 @@
         }
     }
 }
-
-.team-members {
-    &__list {
-        justify-content: center;
-        gap: 40px;
-    }
-
-    &__next,
-    &__previous {
-        z-index: 2;
-        position: absolute;
-        top: calc(100px - 14px);
-    }
-
-    &__previous {
-        left: 20px;
-    }
-
-    &__next {
-        right: 20px;
-    }
-}
