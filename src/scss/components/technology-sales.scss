@@ -1,0 +1,27 @@
+.technology-sale {
+    padding: 20px;
+    border-radius: 6px;
+    background-color: var(--cold-color);
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font: 500 18px var(--base-font-family);
+        color: var(--accent-color);
+    }
+
+    &__description {
+        p {
+            font: 400 15px var(--base-font-family);
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.technology-sales {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 30px;
+}

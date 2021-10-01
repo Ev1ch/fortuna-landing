@@ -1,0 +1,27 @@
+@import '../components/technology-table';
+@import '../components/technology-sales';
+@import '../components/sales-charts';
+
+.statistic {
+    padding-bottom: 60px;
+
+    &__description {
+        text-align: center;
+        width: 800px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 47px;
+    }
+
+    &__text {
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+            font: var(--base-font);
+
+            &:not(:last-of-type) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

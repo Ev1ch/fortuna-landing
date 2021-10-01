@@ -1,0 +1,100 @@
+.sales-chart {
+    text-align: center;
+
+    &__graph {
+        display: inline-block;
+        width: 280px;
+        height: 280px;
+        object-fit: cover;
+        margin-bottom: 42px;
+    }
+
+    &__legend {
+        text-align: left;
+        display: grid;
+        width: 300px;
+        justify-content: space-between;
+        grid-template-columns: repeat(2, max-content);
+        margin: 0 auto;
+        padding-left: 0;
+        list-style-type: none;
+        gap: 14px;
+
+        li {
+            font: 400 12px var(--base-font-family);
+            overflow: hidden;
+
+            &::before {
+                vertical-align: middle;
+                display: inline-block;
+                margin-top: -2px;
+                width: 12px;
+                height: 12px;
+                background-color: #000;
+                border-radius: 50%;
+                margin-right: 10px;
+                content: '';
+            }
+        }
+
+        &--column {
+            width: 120px;
+            gap: 0;
+            display: flex;
+            flex-direction: column;
+
+            li:not(:last-of-type) {
+                margin-bottom: 12px;
+            }
+        }
+
+        &:nth-of-type(1) {
+            li {
+                &:nth-of-type(1) {
+                    &::before {
+                        background-color: #427ec6;
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    &::before {
+                        background-color: #203e62;
+                    }
+                }
+            }
+        }
+
+        &:nth-of-type(2) {
+            li {
+                &:nth-of-type(1) {
+                    &::before {
+                        background-color: #13253b;
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    &::before {
+                        background-color: #2e578a;
+                    }
+                }
+
+                &:nth-of-type(3) {
+                    &::before {
+                        background-color: #427ec6;
+                    }
+                }
+
+                &:nth-of-type(4) {
+                    &::before {
+                        background-color: #203e62;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sales-charts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}

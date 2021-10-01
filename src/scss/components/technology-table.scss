@@ -1,0 +1,32 @@
+.technology-table {
+    margin-bottom: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 6px;
+    background-color: var(--cold-color);
+
+    &__cell {
+        text-align: center;
+    }
+
+    &__column {
+        .technology-table__cell:not(:last-of-type) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__property {
+        margin-bottom: 6px;
+        margin-top: 0;
+        font: 500 15px var(--base-font-family);
+        color: var(--secondary-color);
+    }
+
+    &__value {
+        margin-bottom: 0;
+        margin-top: 0;
+        font: 500 18px var(--base-font-family);
+        color: var(--accent-color);
+    }
+}
