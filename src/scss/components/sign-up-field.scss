@@ -1,0 +1,33 @@
+.sign-up-field {
+    display: inline-flex;
+    width: 370px;
+    justify-content: space-between;
+    color: var(--light-color);
+    align-items: center;
+    flex-wrap: wrap;
+
+    &__title {
+        text-align: center;
+        width: 100%;
+        font: var(--base-font);
+        text-transform: uppercase;
+    }
+
+    &__input {
+        width: 260px;
+        border: 2px solid var(--light-color);
+        outline: none;
+        border-radius: 20px;
+        padding: 10px 20px;
+        font: 400 14px var(--base-font-family);
+        background-color: rgba(var(--light-color-rgb), 0.1);
+
+        &::placeholder {
+            color: var(--light-color);
+        }
+    }
+
+    &__button {
+        text-transform: none;
+    }
+}

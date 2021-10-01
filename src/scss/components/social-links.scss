@@ -1,0 +1,11 @@
+.social-links {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    margin-right: auto;
+    margin-left: auto;
+
+    &__item {
+        text-decoration: none;
+    }
+}
