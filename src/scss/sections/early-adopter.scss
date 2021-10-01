@@ -1,0 +1,28 @@
+.early-adopter {
+    background-image: url('/assets/images/sections/early-adopter.png');
+    background-size: cover;
+    text-align: center;
+
+    &__title {
+        color: var(--light-color);
+    }
+
+    &__text {
+        margin-bottom: 40px;
+
+        p {
+            margin-top: 0;
+            margin-bottom: 0;
+            font: var(--base-font);
+            color: var(--light-color);
+
+            &:not(:last-of-type) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__button {
+        color: var(--accent-color);
+    }
+}
