@@ -1,0 +1,11 @@
+@import '../components/roadmap';
+
+.product-map {
+    text-align: center;
+    background-color: var(--cold-color);
+
+    &__container {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}

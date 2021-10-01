@@ -1,0 +1,49 @@
+.roadmap {
+    background-color: var(--light-accent-color);
+    height: 260px;
+    text-align: left;
+
+    &__container {
+        height: 100%;
+        background-image: url('/assets/images/charts/roadmap.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        display: grid;
+        grid-template-columns: repeat(6, 149px);
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    &__step {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &--down {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__date,
+    &__actions {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    &__date {
+        font: 600 14px var(--base-font-family);
+        text-transform: uppercase;
+        color: var(--accent-color);
+        margin-bottom: 2px;
+    }
+
+    &__actions {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    &__action {
+        font: 400 13px var(--base-font-family);
+    }
+}
