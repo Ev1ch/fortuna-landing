@@ -79,6 +79,10 @@
                 flex-direction: column;
             }
 
+            &__header {
+                width: var(--container-width);
+            }
+
             &__list {
                 width: 100%;
                 grid-column: 1 / 3;

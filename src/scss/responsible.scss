@@ -9,6 +9,7 @@
     }
 
     .navigation {
+        overflow-y: visible;
         padding-top: 30px;
 
         &__logo {
@@ -35,7 +36,7 @@
 
     .header {
         height: 1215px;
-        padding-bottom: 20px;
+        padding-bottom: 32px;
         background-color: var(--header-color);
         background-image: url('/assets/images/sections/header-mobile.png');
         background-size: 100% auto;
@@ -73,6 +74,7 @@
 
     .trading {
         &__section {
+            padding-top: 42px;
             padding-left: 0;
             padding-right: 0;
         }
@@ -81,16 +83,14 @@
             padding-left: 0;
             padding-right: 0;
             grid-template-columns: auto;
-            gap: 40px;
+            gap: 42px;
             grid-template-rows: repeat(2, auto);
         }
 
         &__description {
             text-align: center;
         }
-    }
 
-    .trading {
         &__text {
             margin-bottom: 24px;
         }
@@ -110,7 +110,29 @@
         }
     }
 
+    .trading-reliability {
+        padding-bottom: 20px;
+        background: linear-gradient(
+            to bottom,
+            var(--cold-color) 558px,
+            transparent 0
+        );
+
+        .trading {
+            &__demo {
+                order: 1;
+                padding-bottom: 120px;
+            }
+
+            &__description {
+                order: 2;
+            }
+        }
+    }
+
     .about {
+        padding-top: 20px;
+
         &__container {
             padding-left: 0;
             padding-right: 0;
@@ -118,6 +140,7 @@
 
         &__description {
             width: auto;
+            margin-bottom: 24px;
         }
 
         .platform-features {
@@ -128,6 +151,7 @@
     .early-investor {
         padding-top: 70px;
         padding-bottom: 70px;
+        background-position: inherit bottom;
 
         &__description {
             width: auto;
@@ -137,6 +161,7 @@
     .statistic {
         &__description {
             width: auto;
+            margin-bottom: 55px;
         }
 
         .technology-sales,
