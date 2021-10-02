@@ -1,0 +1,395 @@
+@media screen and (max-width: $breakpoint-md) {
+    .section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .section-title {
+        margin-bottom: 20px;
+    }
+
+    .navigation {
+        padding-top: 30px;
+
+        &__logo {
+            width: 150px;
+            background-color: none;
+        }
+
+        &__button,
+        &__list {
+            display: none;
+        }
+
+        &__toggle {
+            display: block;
+        }
+
+        &__header {
+            margin-bottom: auto;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .header {
+        height: 1215px;
+        padding-bottom: 20px;
+        background-color: var(--header-color);
+        background-image: url('/assets/images/sections/header-mobile.png');
+        background-size: 100% auto;
+        background-position-y: top;
+
+        &__navigation {
+            margin-top: 0;
+        }
+
+        &__container {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__title {
+            margin-bottom: 40px;
+        }
+
+        &__description {
+            text-align: center;
+            margin-top: auto;
+            width: auto;
+        }
+
+        &__text {
+            margin-bottom: 50px;
+        }
+
+        &__panel {
+            gap: 20px;
+            flex-direction: column;
+        }
+    }
+
+    .trading {
+        &__section {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &__container {
+            padding-left: 0;
+            padding-right: 0;
+            grid-template-columns: auto;
+            gap: 40px;
+            grid-template-rows: repeat(2, auto);
+        }
+
+        &__description {
+            text-align: center;
+        }
+    }
+
+    .trading {
+        &__text {
+            margin-bottom: 24px;
+        }
+
+        .trading-features {
+            padding-left: 0;
+
+            &__item {
+                padding-top: 42px;
+
+                &::before {
+                    left: 50%;
+                    top: 0;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+
+    .about {
+        &__container {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &__description {
+            width: auto;
+        }
+
+        .platform-features {
+            grid-template-columns: auto;
+        }
+    }
+
+    .early-investor {
+        padding-top: 70px;
+        padding-bottom: 70px;
+
+        &__description {
+            width: auto;
+        }
+    }
+
+    .statistic {
+        &__description {
+            width: auto;
+        }
+
+        .technology-sales,
+        .sales-charts,
+        .technology-table {
+            grid-template-columns: auto;
+        }
+
+        .technology-table {
+            gap: 20px;
+
+            &__cell {
+                &:not(:last-of-type) {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        .sales-charts {
+            gap: 50px;
+        }
+    }
+
+    .teams {
+        &__section {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .product-map {
+        padding-top: 20px;
+
+        &__title {
+            margin-bottom: 40px;
+        }
+
+        &__container {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    .roadmap {
+        padding: 0;
+        height: auto;
+
+        &__container {
+            background-image: none;
+            grid-template-columns: auto;
+            padding-left: 40px;
+            padding-bottom: 24px;
+            padding-right: 0;
+            gap: 20px;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: '';
+                bottom: 0;
+                top: 12px;
+                left: 9px;
+                width: 2px;
+                background-color: var(--theme-color);
+            }
+
+            &::after {
+                background-color: var(--light-accent-color);
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                bottom: -6px;
+                left: 2px;
+                content: '';
+                background-color: var(--light-color);
+                border: 2px solid var(--darker-color);
+            }
+        }
+
+        &__step {
+            gap: 0;
+            position: relative;
+
+            &::before {
+                top: -4px;
+                background-color: var(--accent-color);
+                position: absolute;
+                width: 18px;
+                height: 18px;
+                border-radius: 50%;
+                left: -41px;
+                content: '';
+                border: 2px solid var(--light-color);
+            }
+
+            &::after {
+                display: none;
+            }
+
+            &--down {
+                flex-direction: column;
+            }
+        }
+    }
+
+    .early-adopter {
+        padding-bottom: 86px;
+    }
+
+    .footer {
+        &__grid {
+            width: auto;
+            grid-template-columns: auto;
+            gap: 40px;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            justify-content: center;
+        }
+
+        &__section {
+            text-align: center;
+        }
+    }
+
+    .sign-up-field {
+        width: auto;
+
+        &__input {
+            width: 200px;
+        }
+    }
+
+    .teams {
+        .team-members {
+            &__list {
+                justify-content: unset;
+                gap: 0;
+            }
+        }
+    }
+}
+
+@media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+    .header {
+        height: 900px;
+        padding-bottom: 20px;
+        background-color: var(--header-color);
+        background-image: url('/assets/images/sections/header.jpg');
+        background-size: auto 450px;
+        background-position-y: top;
+    }
+
+    .sign-up-field {
+        width: 370px;
+    }
+
+    .teams {
+        .team-members {
+            &__list {
+                justify-content: unset;
+                gap: 0;
+            }
+        }
+    }
+}
+
+@media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+    .header {
+        background-position-x: 30%;
+    }
+
+    .statistic {
+        &__description {
+            width: auto;
+        }
+    }
+
+    .roadmap {
+        padding: 0;
+        height: auto;
+
+        &__container {
+            background-image: none;
+            grid-template-columns: auto;
+            padding-left: 40px;
+            padding-bottom: 24px;
+            padding-right: 0;
+            gap: 20px;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: '';
+                bottom: 0;
+                top: 12px;
+                left: 9px;
+                width: 2px;
+                background-color: var(--theme-color);
+            }
+
+            &::after {
+                background-color: var(--light-accent-color);
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                bottom: -6px;
+                left: 2px;
+                content: '';
+                background-color: var(--light-color);
+                border: 2px solid var(--darker-color);
+            }
+        }
+
+        &__step {
+            gap: 0;
+            position: relative;
+
+            &::before {
+                top: -4px;
+                background-color: var(--accent-color);
+                position: absolute;
+                width: 18px;
+                height: 18px;
+                border-radius: 50%;
+                left: -41px;
+                content: '';
+                border: 2px solid var(--light-color);
+            }
+
+            &::after {
+                display: none;
+            }
+
+            &--down {
+                flex-direction: column;
+            }
+        }
+    }
+
+    .about {
+        .platform-features {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .teams {
+        .team-members {
+            &__list {
+                justify-content: unset;
+                gap: 0;
+            }
+        }
+    }
+}

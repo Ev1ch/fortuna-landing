@@ -4,7 +4,7 @@
     .team-members {
         &__list {
             justify-content: center;
-            gap: 40px;
+            gap: 10px;
         }
 
         &__next,
@@ -15,11 +15,11 @@
         }
 
         &__previous {
-            left: 20px;
+            left: 0;
         }
 
         &__next {
-            right: 20px;
+            right: 0;
         }
     }
 

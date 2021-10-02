@@ -5,6 +5,8 @@
     height: 720px;
     background-image: url('/assets/images/sections/header.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
     &__navigation {
         margin-top: 30px;

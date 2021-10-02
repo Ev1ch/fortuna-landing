@@ -2,12 +2,14 @@
     --accent-color: #d80525;
     --accent-color-rgb: 216, 5, 37;
     --theme-color: #427ec6;
+    --theme-color-rgb: 66, 126, 198;
     --light-color: #fff;
     --light-color-rgb: 255, 255, 255;
     --cold-color: #ecf2f9;
     --secondary-color: #9a9da2;
     --dark-color: #343536;
     --darker-color: #000;
+    --header-color: #3372c6;
     --navigation-color: #3170c4;
     --footer-color: #265389;
 
@@ -19,6 +21,6 @@
     --base-time: 0.2s;
 }
 
-$breakpoint-lg: 1440px;
+$breakpoint-lg: 1200px;
 $breakpoint-md: 768px;
 $breakpoint-sm: 576px;

@@ -12,9 +12,15 @@
     }
 }
 
-@media screen and (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+@media screen and (min-width: $breakpoint-sm) {
     .container {
-        --container-width: 760px;
+        --container-width: 560px;
+    }
+}
+
+@media screen and (min-width: $breakpoint-md) {
+    .container {
+        --container-width: 740px;
     }
 }
 
