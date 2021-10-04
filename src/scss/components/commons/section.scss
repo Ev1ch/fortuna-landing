@@ -1,0 +1,11 @@
+.section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    &__title {
+        font: var(--title-font);
+        color: var(--theme-color);
+        margin-top: 0;
+        margin-bottom: 40px;
+    }
+}

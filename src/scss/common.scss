@@ -1,32 +1,5 @@
+@import './components/commons/index';
+
 * {
     box-sizing: border-box;
-}
-
-.section {
-    padding-top: 80px;
-    padding-bottom: 80px;
-
-    &-title {
-        font: var(--title-font);
-        color: var(--theme-color);
-        margin-top: 0;
-        margin-bottom: 40px;
-    }
-}
-
-.button {
-    padding: 10px 20px;
-    border-radius: 20px;
-    border: 2px solid var(--light-color);
-    font: 500 15px var(--base-font-family);
-    text-decoration: none;
-    text-transform: uppercase;
-    cursor: pointer;
-    color: var(--light-color);
-    display: inline-block;
-
-    &--filled {
-        background-color: var(--light-color);
-        color: var(--theme-color);
-    }
 }

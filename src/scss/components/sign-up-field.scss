@@ -1,10 +1,10 @@
 .sign-up-field {
-    display: inline-flex;
     width: 370px;
+    display: inline-flex;
     justify-content: space-between;
-    color: var(--light-color);
     align-items: center;
     flex-wrap: wrap;
+    color: var(--light-color);
 
     &__title {
         text-align: center;
